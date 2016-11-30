@@ -1,3 +1,6 @@
+
+
+
 <h1>Welcome to Santi's Travels</h1>
 <p>Find me in app/views/welcome/index.html.erb</p>
 <h1><%= @homestate %></h1>
@@ -8,10 +11,10 @@
 <% end %>
 </ul>
 
-<%= image_tag "peru.jpg", class: "images" %>
-<%= image_tag "forest.jpg", class: "images" %>
-<%= image_tag "city.jpeg", class: "images" %>
-<%= image_tag "rocks.jpeg", class: "images" %>
+<%= image_tag "peru.jpg", class: "img-responsive" %>
+<%= image_tag "forest.jpg", class: "img-responsive" %>
+<%= image_tag "city.jpeg", class: "img-responsive" %>
+<%= image_tag "rocks.jpeg", class: "img-responsive" %>
 
 <ul>
     <% @travel_pics.each do |img| %>
