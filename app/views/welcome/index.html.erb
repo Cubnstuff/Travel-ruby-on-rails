@@ -1,0 +1,20 @@
+<h1>Welcome to Santi's Travels</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+<h1><%= @homestate %></h1>
+
+<ul>
+<% @countries.each do |country| %>
+<li><%= country %></li>
+<% end %>
+</ul>
+
+<%= image_tag "peru.jpg", class: "images" %>
+<%= image_tag "forest.jpg", class: "images" %>
+<%= image_tag "city.jpeg", class: "images" %>
+<%= image_tag "rocks.jpeg", class: "images" %>
+
+<ul>
+    <% @travel_pics.each do |img| %>
+    <li><%= image_tag img, class: "images" %></li>
+    <% end %>
+</ul>
