@@ -1,3 +1,20 @@
 <h1>Contact me!</h1>
 
 <p>hit me up yo!!</p>
+
+<table class="table">
+  <tr>
+    <% @ushash.each do |key,value| %>
+	  <th><%= key.titleize %></th>
+    <% end %>
+  </tr>
+  <tr>
+    <% @ushash.each do |key,value| %>      
+      <% if value.kind_of?(Array) %>
+          <td><%= value.join(", ") %></td>
+      <% else %>
+         <td><%= value %></td>
+      <% end %> 
+    <% end %>
+  </tr>
+</table>

@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :destinations
+ 
+
+  get 'united_states/index'
+
   root 'welcome#index'
 
   get 'about' => 'welcome#about'

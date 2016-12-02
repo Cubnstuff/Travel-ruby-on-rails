@@ -11,6 +11,7 @@ class WelcomeController < ApplicationController
   end
   
   def contact
+     @ushash = {'capital city'=>'Atlanta Georgia', 'favorite city'=>'Ashville, NC', 'favorite_city'=>'Atlanta'}
   end
   
 end
